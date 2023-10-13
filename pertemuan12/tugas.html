@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h2>
+    1. Apa yang dimaksud Class dalam CSS?
+</h2>
+    <p>
+        Class digunakan untuk mengelompokkan beberapa elemen HTML dengan karakteristik atau gaya yang sama, dan kemudian menerapkan aturan gaya yang sama pada semua elemen tersebut.
+    </p>
+<h2>
+    2. Berdasarkan website yang telah anda buat sebelumnya buatlah CSS menggunakan
+Class simpan dalam file yang berakhiran .css dan panggil menggunakan link?
+</h2>
+    <p>
+        /* contoh.css */<br>
+.judul {
+    font-size: 24px;
+    color: #333;
+}
+
+.iframe-styling {
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+        <br>/*scriptnya*/<br>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Website Pribadi Saya</title>
+            <link rel="stylesheet" type="text/css" href="contoh.css">
+        </head>
+        <body>
+            <h1 class="judul">Website Pribadi Saya</h1>
+            <iframe class="iframe-styling" src="header.html" name="header" scrolling="no"></iframe>
+            <frameset rows="20%, 80%">
+                <frame src="menu.html" name="menu" scrolling="auto">
+                <frame src="content.html" name="content" scrolling="auto">
+            </frameset>
+        </body>
+        </html>        
+    </p>
