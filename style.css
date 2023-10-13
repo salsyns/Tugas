@@ -125,6 +125,8 @@ body {
     text-decoration: none;
     padding: 25px 25px;
     display: block;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .nav-list li a:hover {
