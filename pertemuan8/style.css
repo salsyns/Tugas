@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    /*background-image: url('200w.webp'); /* Ganti 'background.gif' dengan URL gambar GIF Anda 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    min-height: 100vh;
+    width: 100%;
+    font-size: 12px;
+    background: #061e36;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    background-color: #698c92;
+    width: 220px;
+    height: 220px;
+    padding: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 60px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: width 0.4s, height 0.4s,
+        border-radius 0.4s;
+}
+.container:hover {
+    width: 340px;
+    height: 440px;
+    border-radius: 4px;
+}
+.img-container {
+    width: 170px;
+    height: 170px;
+    min-height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
+}
+.img-container img {
+    width: 100%;
+    max-width: 100%;
+}
+.full-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+.role,
+.description {
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    text-align: center;
+}
+.role {
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    border-bottom: 3px solid #ffbe44;
+}
+.social-container {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+}
+.social-container button {
+    border: none;
+    outline: none;
+    color: #eee;
+    background: none;
+    width: 20px;
+    height: 40px;
+    font-size: 1.7em;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.container:hover .social-container button {
+    transform: translateX(60px);
+    transition-delay: 0.3s;
+}
+.container:hover .social-container button:nth-child(2) {
+    transition-delay: 0.5s;
+}
+.container:hover .social-container button:nth-child(3) {
+    transition-delay: 0.7s;
+}
+
+/*tambahan*/
+.navbar {
+    background-color: none;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    display: none;
+}
+
+.nav-list li a{
+    display: inline;
+}
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 25px 25px;
+    display: block;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+
+.social-icon-list{
+    height: 100px;
+    width: 900px;
+    border: 1px solid #000;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--container-shadow);
+}
+.icon-group{
+    height: 40px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease;
+
+}
+.icon-group:hover{
+    width: 200px;
+    justify-content: space-around;
+    
+.icon-group:nth-child(1) {
+    border: 2px solid var(--folder-color);
+}
+
+.icon-group:hover i,
+.icon-group:hover .icon-text{
+    color: #fff;
+}
+.icon-group .icon-text{
+    width: 0;
+    overflow: hidden;
+}
+
+.icon-group:hover .icon-text{
+    width: fit-content;
+    transition: width 1s ease;
+}
+
+.icon-group .icon-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    clip-path: circle(50% at -100% 50%);
+    z-index: 1;
+}
+
+.icon-group:hover .icon-bg{
+    clip-path: circle(150% at 0% 50%);
+    transition: all 1s ease;
+}
+.icon-group:nth-child(1) .icon-bg{
+    background-color: var(--folder-color);
+}
