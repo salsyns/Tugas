@@ -36,7 +36,7 @@ body {
         border-radius 0.4s;
 }
 .container:hover {
-    width: 340px;
+    width: 400px;
     height: 440px;
     border-radius: 4px;
 }
@@ -104,9 +104,9 @@ body {
 
 /*tambahan*/
 .navbar {
-    background-color:none;
+    background-color: none;
     text-align: center;
-    padding: 5px 0;
+    padding: 3px 0;
 }
 
 .nav-list {
@@ -134,7 +134,7 @@ body {
 .menu-toggle {
     cursor: pointer;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 1px;
     margin-left: 1px;
 }
