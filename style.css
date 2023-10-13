@@ -135,7 +135,7 @@ body {
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
-    margin-right: 1px;
+    margin-right: 0;
     margin-left: 1px;
 }
 
